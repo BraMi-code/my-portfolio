@@ -8,6 +8,11 @@ body {
     font-family: Arial;
 }
 
+.b-about {
+  display: block;
+  text-align: center;
+}
+
 /* Navigation bar */
 .navBar {
   overflow: hidden;
@@ -53,16 +58,21 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .navBar.responsive {position: relative;}
+  .navBar.responsive {position: relative;
+
+}
   .navBar.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
+
   }
   .navBar.responsive a {
+    position: relative;
     float: none;
     display: block;
     text-align: left;
+    z-index: 99;
   }
 }
 
@@ -186,4 +196,31 @@ svg:hover {
     color: #444;
     font-size: 1em;
     clip: auto !important; 
+}
+
+/* CONTACT PAGE */
+
+.container {
+  margin-top: 80px;
+  padding-top: 100px;
+  text-align: center;
+  position: relative;
+  display: block;
+  background-color: pink;
+  width: auto;
+  height: 50vh;
+}
+
+/* ABOUT PAGE */ 
+.about {
+  background-color: rgba(162, 162, 253, 0.795);
+}
+
+.myImage {
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+  border-style: double;
+  border-color: black;
+  border-radius: 100px;
 }
