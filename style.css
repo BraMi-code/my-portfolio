@@ -102,7 +102,7 @@ h1 {
 .column {
     float: left;
     width: 25%;
-  }
+}
 
 /* Clear floats after rows */
 .row:after {
@@ -115,6 +115,29 @@ h1 {
 .content {
     background-color: white;
     padding: 10px;
+}
+
+.first-page {
+  display: block;
+}
+
+.second-page {
+  display: none;
+}
+
+.div-btn-next, .div-btn-prev {
+  position: relative;
+}
+
+.btn-next, .btn-prev {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+
+.btn-prev {
+  left: 10px;
+  right: 0;
 }
 
 .project-img {

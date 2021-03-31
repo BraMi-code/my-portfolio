@@ -47,3 +47,16 @@ scrollToTopButton.onclick = function(e) {
   e.preventDefault();
   scrollToTop();
 }
+
+const nextPage = document.getElementById('next-page');
+const prevPage = document.getElementById('prev-page');
+
+nextPage.addEventListener('click', () => {
+  document.getElementById('firstPage').style.display = 'none';
+  document.getElementById('secondPage').style.display = 'block';
+});
+
+prevPage.addEventListener('click', () => {
+  document.getElementById('secondPage').style.display = 'none';
+  document.getElementById('firstPage').style.display = 'block';
+});
